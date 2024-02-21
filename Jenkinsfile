@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'pwd'
+                sh 'g++ helloworld.cpp -o helloworld'
+                sh './helloworld'
             }
         }
     }
